@@ -52,7 +52,7 @@ jobs:
             "Command": {
               "Name": "glueetl",
               "ScriptLocation": "s3://${{ secrets.S3_BUCKET }}/scripts/job.zip",
-              "PythonVersion": "3.11.12"
+              "PythonVersion": "3.11"
             },
             "MaxRetries": 0,
             "Timeout": 10
