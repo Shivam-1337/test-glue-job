@@ -55,5 +55,6 @@ jobs:
               "PythonVersion": "3"
             },
             "MaxRetries": 0,
-            "Timeout": 10
+            "Timeout": 10,
+            "GlueVersion": "3.0"
           }'
