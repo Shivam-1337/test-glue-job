@@ -48,6 +48,7 @@ jobs:
         aws glue update-job \
           --job-name ${{ secrets.GLUE_JOB_NAME }} \
           --job-update '{
+            "Role": "${{ secrets.GLUE_ROLE }}",
             "Command": {
               "Name": "glueetl",
               "ScriptLocation": "s3://${{ secrets.S3_BUCKET }}/scripts/job.zip",
